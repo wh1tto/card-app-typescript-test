@@ -9,6 +9,7 @@ import {
   Routes,
   Route
 } from "react-router-dom";
+import  SettingsDialog  from './components/Settings'
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
         <Route path="edit/:id" element={<EditEntry/>}>
         </Route>
       </Routes>
+      <SettingsDialog></SettingsDialog>
     </EntryProvider>
     </Router>
     </section>
